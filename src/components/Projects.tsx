@@ -4,7 +4,7 @@ const projects = [
   {
     title: "E-Commerce Platform",
     description: "A full-featured e-commerce platform built with React, Node.js, and MongoDB",
-    image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2664&q=80",
+    image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&auto=format&fit=crop&w=2664&q=80",
     tech: ["React", "Node.js", "MongoDB", "Stripe"],
     github: "https://github.com",
     live: "https://example.com"
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Task Management App",
     description: "A collaborative task management application with real-time updates",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80",
     tech: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
     github: "https://github.com",
     live: "https://example.com"
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "AI Content Generator",
     description: "An AI-powered content generation tool using OpenAI's GPT-3",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2672&q=80",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2672&q=80",
     tech: ["React", "OpenAI API", "TailwindCSS", "Express"],
     github: "https://github.com",
     live: "https://example.com"
@@ -40,6 +40,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-purple-600/20"></div>
               </div>
